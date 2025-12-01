@@ -16,6 +16,9 @@ class AuthRegister extends FormRequest
         return [
             'email' => 'required|email:strict',
             'password' => 'required|min:8'
+            'password' => 'required|min:8',
+            'captcha' => 'required|string|size:4',
+            'captcha_key' => 'required|string'
         ];
     }
 
