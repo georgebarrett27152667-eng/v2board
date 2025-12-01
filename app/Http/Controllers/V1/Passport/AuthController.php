@@ -74,7 +74,7 @@ class AuthController extends Controller
     }
 
     public function register(AuthRegister $request)
-    {  
+    {
         // 验证图形验证码
         $captcha = strtolower($request->input('captcha'));
         $captchaKey = $request->input('captcha_key');
